@@ -56,7 +56,7 @@ class EthereumRPC
     {
         $this->host = $host;
         $this->port = $port;
-        $this->ssl = false;
+        $this->ssl = true;
         $this->eth = new Eth($this);
         $this->personal = new Personal($this);
     }
